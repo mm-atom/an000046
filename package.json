@@ -1,0 +1,53 @@
+{
+	"name": "@mmstudio/an000046",
+	"version": "1.0.0",
+	"description": "读取(下载)文件",
+	"scripts": {
+		"test": "tsc && ava ./tests/*.js",
+		"dev": "tsc -w & ava --watch ./tests/*.js",
+		"clean": "del-cli ./dist/",
+		"lint": "eslint ./src/**/*.ts",
+		"compile": "tsc",
+		"build": "npm run clean && npm run lint && npm run compile"
+	},
+	"repository": {
+		"type": "https+git",
+		"url": "https://github.com/mm-atom/an000046.git"
+	},
+	"homepage": "https://mm-works.github.io",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"keywords": [
+		"mm",
+		"mmstudio",
+		"蛮蛮",
+		"蛮蛮工作室",
+		"插件式",
+		"原子操作",
+		"控件",
+		"框架"
+	],
+	"author": {
+		"name": "taoqf",
+		"email": "tao_qiufeng@126.com"
+	},
+	"maintainers": [
+		{
+			"name": "taoqf",
+			"email": "tao_qiufeng@126.com"
+		}
+	],
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "latest",
+		"@typescript-eslint/parser": "latest",
+		"ava": "latest",
+		"del-cli": "latest",
+		"eslint": "latest",
+		"eslint-config-prettier": "latest",
+		"eslint-plugin-import": "latest",
+		"typescript": "next"
+	}
+}
