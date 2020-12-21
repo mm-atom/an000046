@@ -39,10 +39,21 @@
 		}
 	],
 	"license": "MIT",
-	"dependencies": {},
+	"peerDependencies": {
+		"@mmstudio/config": "*",
+		"anylogger": "*"
+	},
+	"dependencies": {
+		"minio": "^7.0.18",
+		"range-parser": "^1.2.1"
+	},
 	"devDependencies": {
+		"@mmstudio/config": "latest",
+		"@types/minio": "^7.0.6",
+		"@types/range-parser": "^1.2.3",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
+		"anylogger": "latest",
 		"ava": "latest",
 		"del-cli": "latest",
 		"eslint": "latest",

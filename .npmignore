@@ -3,7 +3,7 @@ node_modules/
 tests/
 src/
 tsconfig.json
-.eslintignore 
+.eslintignore
 .eslintrc.json
 .gitignore
 .npmignore
@@ -11,3 +11,6 @@ tsconfig.json
 .yarnrc
 *.sh
 *.log
+mm.json
+*.yaml
+*.yml
