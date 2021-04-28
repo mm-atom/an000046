@@ -8,7 +8,8 @@
 		"clean": "del-cli ./dist/",
 		"lint": "eslint ./src/**/*.ts",
 		"compile": "tsc",
-		"build": "npm run clean && npm run lint && npm run compile"
+		"build": "yarn clean && yarn lint && yarn compile",
+		"release": "yarn build && np"
 	},
 	"repository": {
 		"type": "https+git",
@@ -21,9 +22,9 @@
 	"keywords": [
 		"mm",
 		"mmstudio",
-		"蛮蛮",
-		"蛮蛮工作室",
-		"插件式",
+		"01",
+		"零壹",
+		"微工厂",
 		"原子操作",
 		"控件",
 		"框架"
@@ -38,6 +39,10 @@
 			"email": "tao_qiufeng@126.com"
 		}
 	],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"license": "MIT",
 	"peerDependencies": {
 		"@mmstudio/config": "*",
@@ -58,7 +63,10 @@
 		"del-cli": "latest",
 		"eslint": "latest",
 		"eslint-config-prettier": "latest",
+		"eslint-config-ts-lambdas": "latest",
 		"eslint-plugin-import": "latest",
+		"eslint-plugin-prettier": "latest",
+		"np": "latest",
 		"typescript": "next"
 	}
 }

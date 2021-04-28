@@ -13,7 +13,7 @@ interface IMetaData {
 	'content-type': string;
 }
 
-export default async function a008(
+export default async function an46(
 	id: string,
 	download: string | 'true' | 'false' | boolean,
 	req: IncomingMessage,
