@@ -45,17 +45,18 @@
 	},
 	"license": "MIT",
 	"peerDependencies": {
-		"@mmstudio/config": "*",
+		"@next/env": "*",
 		"anylogger": "*"
 	},
 	"dependencies": {
+		"@mmstudio/an000061": "^2.0.2",
 		"minio": "^7.0.26",
 		"range-parser": "^1.2.1"
 	},
 	"devDependencies": {
-		"@mmstudio/config": "latest",
-		"@types/minio": "^7.0.6",
-		"@types/range-parser": "^1.2.3",
+		"@next/env": "latest",
+		"@types/minio": "latest",
+		"@types/range-parser": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"anylogger": "latest",
