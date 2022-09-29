@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.3](https://github.com/mm-atom/an000046/compare/v3.0.2...v3.0.3) (2022-09-29)
+
+
+### Bug Fixes
+
+* script ([20751b2](https://github.com/mm-atom/an000046/commit/20751b291d585f372801dfbf004fce06b864ce09))
+
 ### [3.0.2](https://github.com/mm-atom/an000046/compare/v3.0.1...v3.0.2) (2022-09-29)
 
 ### [3.0.1](https://github.com/mm-atom/an000046/compare/v3.0.0...v3.0.1) (2022-09-29)
