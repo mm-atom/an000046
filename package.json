@@ -9,7 +9,7 @@
 		"lint": "eslint ./src/**/*.ts",
 		"compile": "tsc",
 		"build": "yarn clean && yarn lint && yarn compile",
-		"release": "yarn build && standard-version && npm publish --access public"
+		"release": "yarn build && standard-version && git push --follow-tags origin main && npm publish"
 	},
 	"repository": {
 		"type": "https+git",
@@ -40,6 +40,10 @@
 		}
 	],
 	"license": "MIT",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"peerDependencies": {
 		"@next/env": "*",
 		"anylogger": "*"
