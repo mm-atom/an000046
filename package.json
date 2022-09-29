@@ -9,8 +9,7 @@
 		"lint": "eslint ./src/**/*.ts",
 		"compile": "tsc",
 		"build": "yarn clean && yarn lint && yarn compile",
-		"prepublish": "yarn build && standard-version",
-		"release": "npm publish --access public --resitry https://registry.npmjs.org"
+		"release": "yarn build && standard-version && npm publish --access public --resitry https://registry.npmjs.org"
 	},
 	"repository": {
 		"type": "https+git",
