@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/an000046",
-	"version": "3.0.5",
+	"version": "3.0.6",
 	"description": "读取(下载)文件",
 	"scripts": {
 		"test": "tsc && ava ./tests/*.js",
