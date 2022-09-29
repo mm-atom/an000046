@@ -1,6 +1,8 @@
 import { IncomingMessage, ServerResponse } from 'http';
 import { readFile, rm, stat, writeFile } from 'fs/promises';
 import { createReadStream } from 'fs';
+import { join } from 'path';
+import { tmpdir } from 'os';
 import anylogger from 'anylogger';
 import { Client, ClientOptions } from 'minio';
 import range_parser from 'range-parser';
@@ -68,13 +70,12 @@ export default async function an46(
 		logger.debug(`parsed range:${JSON.stringify(ranges)}`);
 		if (ranges === -1) {
 			if (encrypt) {
-				const tmp = `/tmp/${id}`;
-				await client.fGetObject(namespace, id, tmp);
-				const buf = await readFile(tmp);
-				an61.decrypt(buf);
-				await writeFile(tmp, an61.decrypt(buf));
-				const s = await stat(tmp);
-				await rm(tmp);
+				const filepath = join(tmpdir(), id);
+				await client.fGetObject(namespace, id, filepath);
+				const buf = await readFile(filepath);
+				await writeFile(filepath, an61.decrypt(buf));
+				const s = await stat(filepath);
+				await rm(filepath);
 				res.setHeader('Content-Range', `*/${s.size}`);
 			} else {
 				res.setHeader('Content-Range', `*/${itemStat.size}`);
@@ -103,14 +104,13 @@ export default async function an46(
 	} else {
 		logger.debug(`method: getfile,id:${id} without range.`);
 		if (encrypt) {
-			const tmp = `/tmp/${id}`;
-			await client.fGetObject(namespace, id, tmp);
-			const buf = await readFile(tmp);
-			an61.decrypt(buf);
-			await writeFile(tmp, an61.decrypt(buf));
-			const fs = createReadStream(tmp);
+			const filepath = join(tmpdir(), id);
+			await client.fGetObject(namespace, id, filepath);
+			const buf = await readFile(filepath);
+			await writeFile(filepath, an61.decrypt(buf));
+			const fs = createReadStream(filepath);
 			fs.on('close', async () => {
-				await rm(tmp);
+				await rm(filepath);
 			});
 			fs.pipe(res);
 		} else {
