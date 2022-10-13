@@ -49,7 +49,7 @@
 		"anylogger": "*"
 	},
 	"dependencies": {
-		"@mmstudio/an000061": "^2.0.2",
+		"@mmstudio/an000061": "^2.1.0",
 		"minio": "^7.0.32",
 		"range-parser": "^1.2.1"
 	},
@@ -67,7 +67,6 @@
 		"eslint-config-ts-lambdas": "latest",
 		"eslint-plugin-import": "latest",
 		"eslint-plugin-prettier": "latest",
-		"np": "latest",
 		"standard-version": "latest",
 		"typescript": "next"
 	}
