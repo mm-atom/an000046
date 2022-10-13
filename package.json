@@ -50,7 +50,7 @@
 	},
 	"dependencies": {
 		"@mmstudio/an000061": "^2.0.2",
-		"minio": "^7.0.26",
+		"minio": "^7.0.32",
 		"range-parser": "^1.2.1"
 	},
 	"devDependencies": {
