@@ -49,7 +49,7 @@
 		"anylogger": "*"
 	},
 	"dependencies": {
-		"@mmstudio/an000061": "^2.1.0",
+		"@mmstudio/an000061": "^2.1.3",
 		"minio": "^7.0.32",
 		"range-parser": "^1.2.1"
 	},

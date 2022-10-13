@@ -67,10 +67,10 @@
   resolved "https://repo.huaweicloud.com/repository/npm/@hutson/parse-repository-url/-/parse-repository-url-3.0.2.tgz#98c23c950a3d9b6c8f0daed06da6c3af06981340"
   integrity sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==
 
-"@mmstudio/an000061@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@mmstudio/an000061/-/an000061-2.1.0.tgz#c9444b884649bd3ba7199aa90a67771cdb38774e"
-  integrity sha512-XQshFit1HF4hpM8Im1euUmjJrLyTX5MxsOWf7uIzHQnjSndFKXBbGXbC2C3J0q8oeyDNOD6NNAtz6QLVNYHTmA==
+"@mmstudio/an000061@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.npmjs.org/@mmstudio/an000061/-/an000061-2.1.3.tgz#0180ec5ac7207560a288b21fab5b7aacf45c058d"
+  integrity sha512-xHBrcjyv/mKAaHgLrZhpAldsbB/jpxKzW6DI6U5XOn1L8ZyLIIWZSapDr7MyV6rJpEt1VcsvXcnTU/27sEEJpA==
 
 "@next/env@latest":
   version "12.3.1"
